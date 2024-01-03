@@ -83,5 +83,5 @@ def main(image_path):
 
 if __name__ == "__main__":
     # Replace with your image path
-    image_path = "C:/Users/nazal/Downloads/cristiano-ronaldo.jpg"
+    image_path = ""
     main(image_path)
