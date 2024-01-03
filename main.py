@@ -43,14 +43,14 @@ def concatenate_sounds(filenames, output_filename):
     output.close()
 
 
-def main(image_path):
+def main(image_path,n):
     # Open the image using PIL
     img = Image.open(image_path)
     img = img.convert('RGB')
     pixels = img.load()
 
     width, height = img.size
-    block_size = 8
+    block_size = n
 
     # Process the image in 8x8 blocks
     filenames = []
@@ -84,4 +84,5 @@ def main(image_path):
 if __name__ == "__main__":
     # Replace with your image path
     image_path = ""
-    main(image_path)
+    block_size = 32
+    main(image_path,block_size)
