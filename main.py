@@ -52,7 +52,7 @@ def main(image_path,n):
     width, height = img.size
     block_size = n
 
-    # Process the image in 8x8 blocks
+    # Process the image in blocks
     filenames = []
     for y in range(0, height, block_size):
         for x in range(0, width, block_size):
